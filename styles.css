@@ -79,6 +79,7 @@ button {
     flex-direction: row;
     justify-content: start;
     align-items: center;
+    cursor: pointer;
 }
 
 .color-name {
@@ -114,7 +115,7 @@ span {
 
     .colours {
         margin: 0 auto;
-        height: 400px;
+        height: 70vh;
         max-width: 769px;
         flex-direction: row;
         justify-content: space-between;

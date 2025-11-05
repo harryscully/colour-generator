@@ -32,7 +32,7 @@ function getColorScheme(pickedColor, pickedMode) {
             let html = ''
             data.colors.forEach(color => {
                 html += `
-                    <div class="color" style="background-color: ${color.hex.value} ">
+                    <div class="color" style="background-color: ${color.hex.value}" data-hex="${color.hex.value}">
                         <p class="color-name">${color.hex.value}
                         <span>${color.name.value}</span></p>
                     </div>
@@ -41,6 +41,11 @@ function getColorScheme(pickedColor, pickedMode) {
             document.getElementById("colours").innerHTML = html
         })
 }
+
+function copyColour(el) {
+    navigator.clipboard.writeText(el.dataset.hex)
+}
+
 
 // ON PAGE LOAD
 const randomColor = getRandomColor()
@@ -56,3 +61,9 @@ getSchemeBtn.addEventListener("click", () => {
     getColorScheme(colourPicker.value, schemePicker.value)
 })
 
+document.getElementById("colours").addEventListener("click", (e) => {
+    const colorDiv = e.target.closest(".color")
+    if (colorDiv) {
+        copyColour(colorDiv)
+    }
+})

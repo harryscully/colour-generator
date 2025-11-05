@@ -87,7 +87,7 @@ button {
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 100px;
+    width: 120px;
     padding: 0em 1.5em;
 
     background-color: #1F2937;
@@ -129,7 +129,9 @@ span {
 
     .color-name {
         margin: 0;
-        height: 46px;
+        justify-content: start;
+        padding-top: 1.5em;
+        height: 80px;
         width: 100%;
     }
 }

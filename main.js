@@ -16,7 +16,8 @@ function getColorScheme(pickedColor, pickedMode) {
             data.colors.forEach(color => {
                 html += `
                     <div class="color" style="background-color: ${color.hex.value} ">
-                        <p class="color-name">${color.hex.value}</p>
+                        <p class="color-name">${color.hex.value}
+                        <span>${color.name.value}</span></p>
                     </div>
                 `
             })

@@ -83,6 +83,7 @@ button {
 
 .color-name {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -95,6 +96,12 @@ button {
     font-size: 0.75rem;
     font-weight: 500;
     text-transform: uppercase;
+}
+
+span {
+    display: block;
+    text-align: center;
+    font-weight: 700;
 }
 
 /* MEDIA QUERIES */

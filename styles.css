@@ -73,26 +73,6 @@ button {
     justify-content: start;
 }
 
-.color:first-child {
-    background-color: #f55a5a;
-}
-
-.color:nth-child(2) {
-    background-color: #fbf3ab;
-}
-
-.color:nth-child(3) {
-    background-color: #2872e2;
-}
-
-.color:nth-child(4) {
-    background-color: #20b920;
-}
-
-.color:nth-child(5) {
-    background-color: #abf2fb;
-}
-
 .color {
     height: 100px;
     display: flex;
@@ -106,6 +86,7 @@ button {
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100px;
     padding: 0em 1.5em;
 
     background-color: #1F2937;

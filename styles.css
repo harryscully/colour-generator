@@ -52,6 +52,10 @@ select {
 }
 
 button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     height: 42px;
     padding: 1em;
 
